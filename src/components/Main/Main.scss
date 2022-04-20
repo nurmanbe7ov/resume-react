@@ -1,0 +1,30 @@
+.main {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media all and(max-width: 500px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  @media all and(max-width: 320px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    .photo {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+.main-text {
+  .pi {
+    font-size: 20px;
+  }
+  .pi:hover {
+    font-size: 25px;
+    background-color: azure;
+    cursor: pointer;
+  }
+}
